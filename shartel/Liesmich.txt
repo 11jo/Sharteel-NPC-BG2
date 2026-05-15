@@ -1,0 +1,149 @@
+				BG II - Mini-Mod : Shar-Teel
+
+			Hergestellt von Nicolas Peters (darthsabe@web.de)
+
+			Besonderer Dank geht an dieser Stelle an die erstklassigen Tutoriale
+
+			von Maus und Octavian!
+
+
+
+
+				Version: 1.0b
+
+
+				Bisher nicht mit TdB kompatibel!
+				
+				Bisher nur deutschsprachig!
+
+
+
+Inhaltsverzeichnis:
+
+1.  Einführung
+1a. Installationsanweisung (bitte lesen!)
+2.  Spielerelevante Fakten
+2.1 Dialoge
+2.2 Quests
+3.  Kompatibilität
+4.  Dank
+5.  Rechtliche Hinweise
+6.  Updates
+7.  Hilfreiche Links
+8.  Die Veränderungen im Spiel *Spoiler!*
+
+
+1. Einführung
+
+Mit dieser Modifaktion ist es euch möglich, Shar-Teel aus Baldur's Gate 1 in die Gruppe mit aufzunehmen.
+Für diejenigen, die nicht wissen, wer Shar-Teel ist: Sie ist eine chaotisch böse Kämpferin, die man in Baldur's Gate 1
+östlich des Tempels von Beregost trifft. Bei dieser Begegnung fordert die männerhassende Kriegerin den besten männlichen
+Kämpfer zum Duell heraus. Keine Angst! Das Duell geht nicht bis zum Tode. Wenn man gegen sie gewinnt, dann stellt sie
+sich in Diente unserers Hauptcharakters. Wenn sie gewinnt, dann verlangt sie Gold zu sehen.
+
+Wieso also ein Mod für BG2? Ganz einfach! Ich habe Shar-Teel immer in meiner Gruppe gehabt, wenn ich BG1 gespielt
+habe - und zwar einschließlich Endkampf. Ich fands irgendwie immer schade, dass sie in BG2 gar nicht mehr auftaucht.
+Deswegen habe ich mir gedacht, dass sie mit unserem Hauptcharakter gefangen genommen und in Irenicus Kerker eingesperrt
+worden sein könnte.
+
+Wo ist Shar-Teel zu finden?
+Wenn Ihr in Irenicus Kerker beginnt, werdet ihr noch in der ersten Ebene auf sie treffen. Sie hält sich in dem Raum auf,
+indem sich der Aktivierungsstein für den Abwassergolem befindet.
+
+
+1a. Installationsanweisung
+
+Die *.zip Datei in das BG2-Hauptverzeichnis(!) entpacken und dann die Setup-sharteel.exe starten.
+
+
+
+2. Spielerelevante Fakten
+
+Shar-Teel ist eine chaotisch böse Kämpferin der 7. Stufe. Sie sollte sich aber dem Hauptcharakter mit der Erfahrung
+ein bisschen anpassen, wenn er höherstufiger sein sollte. Wenn ihr euch für die genauen Werte und Fähigkeiten von Shar-Teel
+interessiert, dann könnt ihr sie unter www.baldursgate-refugium.de.vu unter 'Mods' einsehen ;-)
+
+
+
+2.1 Dialoge
+
+Es gibt bisher nur ein paar wenige Dialoge, die jedoch die Stimmung in Irenicus Kerker vielleicht ein wenig anheben ;-)
+
+
+
+2.2 Quests
+
+Bisher gibt es keine charakterspezifischen Quests. Ich habe im Moment auch nicht vor, welche einzubauen. Vielleicht
+werde ich so etwas mal später einbauen, wenn ich die Dialoge und alles zu meiner Zufriedenheit habe.
+
+
+
+3. Kompatiblilität
+
+Die Shar-Teel Modifaktion sollte eigentlich mit allen anderen Mods kompatibel sein. Sie ist jedoch nicht mit dem
+Addon 'Thron des Bhaal' kompatibel, d.h. ihr könnt Shar-Teel nur in 'Schatten von Amn' spielen. Es macht aber nix,
+wenn das Addon installiert ist, sollte trotzdem alles reibungslos laufen.
+
+
+
+4. Dank
+
+Mein besonderer Dank geht an Maus, für ihr wunderbares deutsches Tutorial zur Erstellung eines NSC's und an Ocatvian,
+den viele als Entwickler der Drizzt-Modifaktion kennen, der mir mit Rat und Tat und ebenfalls mit einem erstklassigen
+Tutorial zur Seite stand. Weiterhin geht mein Dank an die Entwickler der fantastischen Tools Weidu, Near Infinity
+und ShadowKeeper, die es mir ermöglicht haben, das Mod herzustellen. 
+
+
+
+5. Rechtliche Hinweise
+
+Dieser Mod ist nicht kommerziell, sondern ausschließlich für den privaten Gebrauch gedacht. Shar-Teel ist eine
+Erfindung von den Machern von Baldur's Gate. Der Begriff "Forgotten Realms" ist eine urheberrechtlich geschützte
+Bezeichnung der Wizard of the Coast INC ©.
+
+Beim Testen dieser Erweiterung konnte ich keine Fehler feststellen, die sich negativ auf die Computersysteme auswirken
+könnten. Dennoch bitte ich um Verständnis, dass ich keine Verantwortung für etwaige Schäden, die durch Installation dieses
+Mods auftreten könnten,übernehmen kann. Jede Installation läuft auf eigener Gefahr. Um den Zustand vor der Installation
+erreichen zu können, rate ich, ein oder zwei Speicherstände vor ebendieser zu sichern.
+
+
+
+6. Updates
+
+1.0b -> Möglichkeit eingebaut, dass man Shar-Teel auch später in die Gruppe aufnehmen kann,
+wenn man den Irenicus-Dungeon mittels Mod übersprungen hat oder kein neues Spiel beginnen möchte.
+Shar-Teel sollte von nun an in der Kupferkrone zu finden sein, sollte man ihr nicht bereits im
+Irenicus Dungeon begegnet sein.
+
+
+
+
+7. Hilfreiche Links
+
+www.baldursgate-refugium.de.vu
+Meine Homepage, wo unter anderem immer die neueste Version des Shar-Teel Mods zu finden sein sollte.
+
+
+www.virtuelles-rollenspiel.de/www.rosenranken.net/index.php
+Das Rosenranken Forum, das beste deutschesprachige Forum der Baldur's Gate Community
+
+
+www.cs.berkeley.edu/%7Eweimer/bgate/
+Weimer; die Seite, wo man sich immer die aktuelle Version von Weidu runterladen kann. Außerdem gibt es dort das
+Ascension-Mod, das Solaufein-Mod, Valen-Mod etc.
+
+
+www.bgforum.whcity.de/showthread.php?s=&threadid=14855
+Eine riesige geniale Linkliste zu engl. und dt. Mods, Patches, Tutorials etc. ...
+
+
+
+8. Die Verändungen im Spiel in der Version: 1.0
+
+-> ausführlicher Aufnahmedialog.
+-> Illyich, Irenicus Kerker: Shar-Teel mischt sich in das Gespräch ein.
+-> Yoshimo, Irenicus Kerker: Shar-Teel mischt sich 1-2 mal in das Gespräch ein.
+-> Frennedan (Doppelgänger), Irenicus Kerker: Shar-Teel mischt sich in das Gespräch ein.
+-> Meuchelmörder, Irenicus Kerker: Shar-Teel mischt sich unter Umständen in das Gespräch ein.
+-> Salvanas (liebeskranker Elf), Kupferkrone: Shar-Teel hat einen 'netten' Dialog mit ihm, wenn man ihn mit ihr anspricht.
+-> Dialog nach der Flucht aus Irenicus Kerker in Waukeens Promenade
