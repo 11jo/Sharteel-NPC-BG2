@@ -5,112 +5,18 @@ README ~Sharteel_BG2\Readme\Liesmich.txt~
 
 BEGIN ~Shar-Teel Mod für Baldur's Gate II~
 
-// Shar-Teels neue Portraits kopieren
-COPY ~Sharteel_BG2/Portraits/sharL.bmp~ ~override/sharL.bmp~
-COPY ~Sharteel_BG2/Portraits/sharS.bmp~ ~override/sharS.bmp~
+OUTER_SPRINT "sharL" "sharL"
+OUTER_SPRINT "sharS" "sharS"
 
-// Shar-Teels Soundset kopieren
-COPY ~Sharteel_BG2/Sounds/shar1.wav~ ~override/shar1.wav~
-COPY ~Sharteel_BG2/Sounds/shart.wav~ ~override/shart.wav~
-COPY ~Sharteel_BG2/Sounds/sharu.wav~ ~override/sharu.wav~
-COPY ~Sharteel_BG2/Sounds/sharb.wav~ ~override/sharb.wav~
-COPY ~Sharteel_BG2/Sounds/sharc.wav~ ~override/sharc.wav~
-COPY ~Sharteel_BG2/Sounds/shard.wav~ ~override/shard.wav~
-COPY ~Sharteel_BG2/Sounds/shara.wav~ ~override/shara.wav~
-COPY ~Sharteel_BG2/Sounds/shar9.wav~ ~override/shar9.wav~
-COPY ~Sharteel_BG2/Sounds/shar8.wav~ ~override/shar8.wav~
-COPY ~Sharteel_BG2/Sounds/sharl.wav~ ~override/sharl.wav~
-COPY ~Sharteel_BG2/Sounds/sharm.wav~ ~override/sharm.wav~
-COPY ~Sharteel_BG2/Sounds/sharf.wav~ ~override/sharf.wav~
-COPY ~Sharteel_BG2/Sounds/sharg.wav~ ~override/sharg.wav~
-COPY ~Sharteel_BG2/Sounds/sharh.wav~ ~override/sharh.wav~
-COPY ~Sharteel_BG2/Sounds/sharx.wav~ ~override/sharx.wav~
-COPY ~Sharteel_BG2/Sounds/shary.wav~ ~override/shary.wav~
-COPY ~Sharteel_BG2/Sounds/shari.wav~ ~override/shari.wav~
-COPY ~Sharteel_BG2/Sounds/sharj.wav~ ~override/sharj.wav~
-COPY ~Sharteel_BG2/Sounds/shark.wav~ ~override/shark.wav~
-COPY ~Sharteel_BG2/Sounds/shars.wav~ ~override/shars.wav~
-COPY ~Sharteel_BG2/Sounds/sharv.wav~ ~override/sharv.wav~
+			OUTER_SET Sharteel_portrait = 1
 
-// Charakterscript kopieren
-COPY ~Sharteel_BG2/Baf/shartel.bcs~ ~override/shartel.bcs~
+	INCLUDE ~Sharteel_BG2/Lib/Sharteel_BG2.tpa~
 
-// CRE kopieren, Namensgebung, Setzen der Biographie, Eintrag der Sounds
-COPY ~Sharteel_BG2/Cre/shartel.cre~ ~override/shartel.cre~
-SAY NAME1 ~Shar-Teel~
-SAY NAME2 ~Shar-Teel~
-SAY BIO ~Als Ihr SHAR-TEEL nach ihrer Vergangenheit fragt, sagt sie nicht viel. Von dem wenigen, das sie erzählt, könnt Ihr schließen, dass sie eine Waise ist. Sie scheint auch eine ausgeprägte Abneigung gegenüber Söldnern der Flammenden Faust zu hegen, ebenso eine offensichtliche Respektlosigkeit gegenüber Männern im allgemeinen. Sie scheint sich etwas beweisen zu müssen und wahrscheinlich hatte sie nicht unbedingt eine Bilderbuch-Kindheit.~
-SAY INITIAL_MEETING ~Ich scheiß auf Eure Männlichkeit!~ [shar1]
-SAY HAPPY ~Feinde niedermetzeln...bringt Freude ins Leben.~ [shart]
-SAY UNHAPPY_ANNOYED ~Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann.~ [sharu]
-SAY LEADER ~Ich werde diese Gruppe besser anführen, als es ein Mann jemals könnte.~ [sharb]
-SAY TIRED ~Kleine Pause geht in Ordnung...~ [sharc]
-SAY BORED ~Reine Zeitverschwendung, besser gesagt 'Männer' sind reine Zeitverschwendung.~ [shard]
-SAY BATTLE_CRY1 ~Wenn es blutet kann ich es auch töten.~ [shara]
-SAY BATTLE_CRY2 ~das Schwein hat es heraufbeschwört.~ [shar9]
-SAY BATTLE_CRY3 ~Lasst Euch von keinem Mann einschüchtern.~ [shar8]
-SAY DAMAGE ~~ [sharl]
-SAY DYING ~~ [sharm]
-SAY SELECT_COMMON1 ~Vorsicht ist heldenhafter als Mut.~ [sharf]
-SAY SELECT_COMMON2 ~Männer sind so armselig.~ [sharg]
-SAY SELECT_COMMON3 ~Hm...ich liebe Blutvergießen.~ [sharh]
-SAY SELECT_COMMON4 ~Männer denken niemals mit ihrem Gehirn.~ [sharx]
-SAY SELECT_COMMON5 ~Nutzloser stinkender männlicher Dreckhaufen.~ [shary]
-SAY SELECT_ACTION1 ~Ok.~ [shari]
-SAY SELECT_ACTION2 ~Wirklich?~ [sharj]
-SAY SELECT_ACTION3 ~Ich tue es.~ [shark]
-SAY SELECT_ACTION4 ~Manchmal bringt mich schon der Geruch eines Mannes zum Würgen.~ [shars]
-SAY SELECT_ACTION5 ~Feinde niedermetzeln bringt Freude ins Leben.~ [shart]
-SAY SELECT_ACTION6 ~Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann.~ [sharu]
-SAY SELECT_ACTION7 ~Mit Schmeicheleien kommt Ihr bei mir nicht weiter.~ [sharv]
+BEGIN ~Shar-Teels neue Portraits mit den alten (BG1) ersetzen?~ // Remplacer les nouveaux portraits de Shar-Teel par les anciens (BG1) ?
 
-// Gebietscripte ergänzen
-EXTEND_BOTTOM ~AR0602.bcs~ ~Sharteel_BG2/Baf/Arshar.bcs~
-EXTEND_BOTTOM ~AR0406.bcs~ ~Sharteel_BG2/Baf/AR0406.bcs~
+			OUTER_SET Sharteel_portrait = 0
 
-// Dialoge kompilieren
-COMPILE ~Sharteel_BG2/Dialogs/charJ.d~
-USING ~~
-COMPILE ~Sharteel_BG2/Dialogs/charP.d~
-USING ~~
+OUTER_SPRINT "sharL" "SHARTELL"
+OUTER_SPRINT "sharS" "SHARTELM"
 
-// Dialoge in 2da's hinzufügen
-APPEND ~pdialog.2da~
-~shartel	charP		charJ		charD~
-UNLESS ~shartel~
-UNLESS ~25POST~
-APPEND ~pdialog.2da~ ~shartel charP charJ charD char25P char25J char25D~
-UNLESS ~shartel~
-IF ~25POST~
-
-
-BEGIN ~Shar-Teels neue Portraits mit den alten (BG1) ersetzen?~
-
-// Shar-Teels CRE-Datei überschreiben und neue Definitionen geben
-COPY ~Sharteel_BG2/Cre/shartel2.cre~ ~override/shartel.cre~
-SAY NAME1 ~Shar-Teel~
-SAY NAME2 ~Shar-Teel~
-SAY BIO ~Als Ihr SHAR-TEEL nach ihrer Vergangenheit fragt, sagt sie nicht viel. Von dem wenigen, das sie erzählt, könnt Ihr schließen, dass sie eine Waise ist. Sie scheint auch eine ausgeprägte Abneigung gegenüber Söldnern der Flammenden Faust zu hegen, ebenso eine offensichtliche Respektlosigkeit gegenüber Männern im allgemeinen. Sie scheint sich etwas beweisen zu müssen und wahrscheinlich hatte sie nicht unbedingt eine Bilderbuch-Kindheit.~
-SAY INITIAL_MEETING ~Ich scheiß auf Eure Männlichkeit!~ [shar1]
-SAY HAPPY ~Feinde niedermetzeln...bringt Freude ins Leben.~ [shart]
-SAY UNHAPPY_ANNOYED ~Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann.~ [sharu]
-SAY LEADER ~Ich werde diese Gruppe besser anführen, als es ein Mann jemals könnte.~ [sharb]
-SAY TIRED ~Kleine Pause geht in Ordnung...~ [sharc]
-SAY BORED ~Reine Zeitverschwendung, besser gesagt 'Männer' sind reine Zeitverschwendung.~ [shard]
-SAY BATTLE_CRY1 ~Wenn es blutet kann ich es auch töten.~ [shara]
-SAY BATTLE_CRY2 ~das Schwein hat es heraufbeschwört.~ [shar9]
-SAY BATTLE_CRY3 ~Lasst Euch von keinem Mann einschüchtern.~ [shar8]
-SAY DAMAGE ~~ [sharl]
-SAY DYING ~~ [sharm]
-SAY SELECT_COMMON1 ~Vorsicht ist heldenhafter als Mut.~ [sharf]
-SAY SELECT_COMMON2 ~Männer sind so armselig.~ [sharg]
-SAY SELECT_COMMON3 ~Hm...ich liebe Blutvergießen.~ [sharh]
-SAY SELECT_COMMON4 ~Männer denken niemals mit ihrem Gehirn.~ [sharx]
-SAY SELECT_COMMON5 ~Nutzloser stinkender männlicher Dreckhaufen.~ [shary]
-SAY SELECT_ACTION1 ~Ok.~ [shari]
-SAY SELECT_ACTION2 ~Wirklich?~ [sharj]
-SAY SELECT_ACTION3 ~Ich tue es.~ [shark]
-SAY SELECT_ACTION4 ~Manchmal bringt mich schon der Geruch eines Mannes zum Würgen.~ [shars]
-SAY SELECT_ACTION5 ~Feinde niedermetzeln bringt Freude ins Leben.~ [shart]
-SAY SELECT_ACTION6 ~Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann.~ [sharu]
-SAY SELECT_ACTION7 ~Mit Schmeicheleien kommt Ihr bei mir nicht weiter.~ [sharv]
+	INCLUDE ~Sharteel_BG2/Lib/Sharteel_BG2.tpa~
