@@ -1,0 +1,108 @@
+
+
+IF
+	Global("sharteelStartDialog","LOCALS",0)
+	LOS(Player1,10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!InPartyAllowDead("sharteel")
+	!InParty("sharteel")
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelStartDialog","LOCALS",1)
+		MoveToObject(Player1)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	InParty(Myself)
+	Global("shartFluchtGelungen","LOCALS",0)
+	AreaCheck("AR0700")
+	See(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("shartFluchtGelungen","LOCALS",1)
+		Wait(1)
+		StartDialogueNoSet(Player1)
+END
+
+//////////////////////////////////////////////////////////////////////
+
+IF
+	InParty(Myself)
+	Global("sharteelGetXP","LOCALS",0)
+	XPGT(Player1,100000)
+	XPLT(Player1,200001)
+	XPLT(Myself,100000)
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelGetXP","LOCALS",1)
+		AddXPObject(Myself,100000)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	Global("sharteelGetXP","LOCALS",0)
+	XPGT(Player1,200000)
+	XPLT(Player1,300001)
+	XPLT(Myself,200000)
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelGetXP","LOCALS",1)
+		AddXPObject(Myself,200000)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	Global("sharteelGetXP","LOCALS",0)
+	XPGT(Player1,300000)
+	XPLT(Player1,400001)
+	XPLT(Myself,300000)
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelGetXP","LOCALS",1)
+		AddXPObject(Myself,300000)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	Global("sharteelGetXP","LOCALS",0)
+	XPGT(Player1,400000)
+	XPLT(Player1,500001)
+	XPLT(Myself,400000)
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelGetXP","LOCALS",1)
+		AddXPObject(Myself,400000)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	Global("sharteelGetXP","LOCALS",0)
+	XPGT(Player1,600000)
+	XPLT(Player1,1000001)
+	XPLT(Myself,600000)
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelGetXP","LOCALS",1)
+		AddXPObject(Myself,600000)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	Global("sharteelGetXP","LOCALS",0)
+	XPGT(Player1,1000000)
+	XPLT(Myself,1000000)
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelGetXP","LOCALS",1)
+		AddXPObject(Myself,1000000)
+		Continue()
+END

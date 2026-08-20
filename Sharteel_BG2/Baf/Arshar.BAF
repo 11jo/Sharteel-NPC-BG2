@@ -1,0 +1,15 @@
+IF
+	Global("sharteelExists","MYAREA",0)
+	!Exists("sharteel")
+	!BeenInParty("sharteel")
+	!Dead("sharteel")
+	!InMyArea("sharteel")
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelExists","MYAREA",1)
+		CreateCreature("JOsharte",[1434.1524],1)
+		SmallWait(1)
+		ActionOverride("sharteel",MakeGlobal())
+		Continue()
+END
+

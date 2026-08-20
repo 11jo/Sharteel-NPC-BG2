@@ -3,81 +3,126 @@
 ACTION_IF Sharteel_portrait = 1 THEN BEGIN
 
 // Shar-Teels neue Portraits kopieren
-	COPY ~Sharteel_BG2/Portraits/sharL.bmp~ ~override/sharL.bmp~
-	COPY ~Sharteel_BG2/Portraits/sharS.bmp~ ~override/sharS.bmp~
+	COPY ~Sharteel_BG2/Portraits/sharL.bmp~ ~override/JOsharL.bmp~
+	COPY ~Sharteel_BG2/Portraits/sharS.bmp~ ~override/JOsharS.bmp~
 
 END
 
 // Shar-Teels Soundset kopieren
-	COPY ~Sharteel_BG2/Sounds/shar1.wav~ ~override/shar1.wav~
-	COPY ~Sharteel_BG2/Sounds/shart.wav~ ~override/shart.wav~
-	COPY ~Sharteel_BG2/Sounds/sharu.wav~ ~override/sharu.wav~
-	COPY ~Sharteel_BG2/Sounds/sharb.wav~ ~override/sharb.wav~
-	COPY ~Sharteel_BG2/Sounds/sharc.wav~ ~override/sharc.wav~
-	COPY ~Sharteel_BG2/Sounds/shard.wav~ ~override/shard.wav~
-	COPY ~Sharteel_BG2/Sounds/shara.wav~ ~override/shara.wav~
-	COPY ~Sharteel_BG2/Sounds/shar9.wav~ ~override/shar9.wav~
-	COPY ~Sharteel_BG2/Sounds/shar8.wav~ ~override/shar8.wav~
-	COPY ~Sharteel_BG2/Sounds/sharl.wav~ ~override/sharl.wav~
-	COPY ~Sharteel_BG2/Sounds/sharm.wav~ ~override/sharm.wav~
-	COPY ~Sharteel_BG2/Sounds/sharf.wav~ ~override/sharf.wav~
-	COPY ~Sharteel_BG2/Sounds/sharg.wav~ ~override/sharg.wav~
-	COPY ~Sharteel_BG2/Sounds/sharh.wav~ ~override/sharh.wav~
-	COPY ~Sharteel_BG2/Sounds/sharx.wav~ ~override/sharx.wav~
-	COPY ~Sharteel_BG2/Sounds/shary.wav~ ~override/shary.wav~
-	COPY ~Sharteel_BG2/Sounds/shari.wav~ ~override/shari.wav~
-	COPY ~Sharteel_BG2/Sounds/sharj.wav~ ~override/sharj.wav~
-	COPY ~Sharteel_BG2/Sounds/shark.wav~ ~override/shark.wav~
-	COPY ~Sharteel_BG2/Sounds/shars.wav~ ~override/shars.wav~
-	COPY ~Sharteel_BG2/Sounds/sharv.wav~ ~override/sharv.wav~
+//	COPY ~Sharteel_BG2/Sounds/shar1.wav~ ~override/JOshar1.wav~
+//	COPY ~Sharteel_BG2/Sounds/shart.wav~ ~override/JOshart.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharu.wav~ ~override/JOsharu.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharb.wav~ ~override/JOsharb.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharc.wav~ ~override/JOsharc.wav~
+//	COPY ~Sharteel_BG2/Sounds/shard.wav~ ~override/JOshard.wav~
+//	COPY ~Sharteel_BG2/Sounds/shara.wav~ ~override/JOshara.wav~
+//	COPY ~Sharteel_BG2/Sounds/shar9.wav~ ~override/JOshar9.wav~
+	COPY ~Sharteel_BG2/Sounds/shar8.wav~ ~override/JOshar8.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharl.wav~ ~override/JOsharl.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharm.wav~ ~override/JOsharm.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharf.wav~ ~override/JOsharf.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharg.wav~ ~override/JOsharg.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharh.wav~ ~override/JOsharh.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharx.wav~ ~override/JOsharx.wav~
+//	COPY ~Sharteel_BG2/Sounds/shary.wav~ ~override/JOshary.wav~
+//	COPY ~Sharteel_BG2/Sounds/shari.wav~ ~override/JOshari.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharj.wav~ ~override/JOsharj.wav~
+//	COPY ~Sharteel_BG2/Sounds/shark.wav~ ~override/JOshark.wav~
+//	COPY ~Sharteel_BG2/Sounds/shars.wav~ ~override/JOshars.wav~
+//	COPY ~Sharteel_BG2/Sounds/sharv.wav~ ~override/JOsharv.wav~
 
 // Charakterscript kopieren
-	COPY ~Sharteel_BG2/Baf/shartel.bcs~ ~override/shartel.bcs~
+	COMPILE ~Sharteel_BG2/Baf/JOsharte.baf~
 
 // CRE kopieren, Namensgebung, Setzen der Biographie, Eintrag der Sounds
-	COPY ~Sharteel_BG2/Cre/shartel.cre~ ~override/shartel.cre~
-		SAY NAME1 ~Shar-Teel~
-		SAY NAME2 ~Shar-Teel~
-		SAY BIO ~Als Ihr SHAR-TEEL nach ihrer Vergangenheit fragt, sagt sie nicht viel. Von dem wenigen, das sie erzählt, könnt Ihr schließen, dass sie eine Waise ist. Sie scheint auch eine ausgeprägte Abneigung gegenüber Söldnern der Flammenden Faust zu hegen, ebenso eine offensichtliche Respektlosigkeit gegenüber Männern im allgemeinen. Sie scheint sich etwas beweisen zu müssen und wahrscheinlich hatte sie nicht unbedingt eine Bilderbuch-Kindheit.~
-		SAY INITIAL_MEETING ~Ich scheiß auf Eure Männlichkeit!~ [shar1]
-		SAY HAPPY ~Feinde niedermetzeln...bringt Freude ins Leben.~ [shart]
-		SAY UNHAPPY_ANNOYED ~Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann.~ [sharu]
-		SAY LEADER ~Ich werde diese Gruppe besser anführen, als es ein Mann jemals könnte.~ [sharb]
-		SAY TIRED ~Kleine Pause geht in Ordnung...~ [sharc]
-		SAY BORED ~Reine Zeitverschwendung, besser gesagt 'Männer' sind reine Zeitverschwendung.~ [shard]
-		SAY BATTLE_CRY1 ~Wenn es blutet kann ich es auch töten.~ [shara]
-		SAY BATTLE_CRY2 ~das Schwein hat es heraufbeschwört.~ [shar9]
-		SAY BATTLE_CRY3 ~Lasst Euch von keinem Mann einschüchtern.~ [shar8]
-		SAY DAMAGE ~~ [sharl]
-		SAY DYING ~~ [sharm]
-		SAY SELECT_COMMON1 ~Vorsicht ist heldenhafter als Mut.~ [sharf]
-		SAY SELECT_COMMON2 ~Männer sind so armselig.~ [sharg]
-		SAY SELECT_COMMON3 ~Hm...ich liebe Blutvergießen.~ [sharh]
-		SAY SELECT_COMMON4 ~Männer denken niemals mit ihrem Gehirn.~ [sharx]
-		SAY SELECT_COMMON5 ~Nutzloser stinkender männlicher Dreckhaufen.~ [shary]
-		SAY SELECT_ACTION1 ~Ok.~ [shari]
-		SAY SELECT_ACTION2 ~Wirklich?~ [sharj]
-		SAY SELECT_ACTION3 ~Ich tue es.~ [shark]
-		SAY SELECT_ACTION4 ~Manchmal bringt mich schon der Geruch eines Mannes zum Würgen.~ [shars]
-		SAY SELECT_ACTION5 ~Feinde niedermetzeln bringt Freude ins Leben.~ [shart]
-		SAY SELECT_ACTION6 ~Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann.~ [sharu]
-		SAY SELECT_ACTION7 ~Mit Schmeicheleien kommt Ihr bei mir nicht weiter.~ [sharv]
-WRITE_ASCII 0x034 ~%sharS%~ (8)	// Small portrait
-WRITE_ASCII 0x03c ~%sharL%~ (8)	// Large portrait
+	COPY ~Sharteel_BG2/Cre/shartel.cre~ ~override/JOsharte.cre~
+		SAY NAME1 @100 /* Shar-Teel */
+		SAY NAME2 @100 /* Shar-Teel */
+		SAY BIO @101 /* Als Ihr SHAR-TEEL nach ihrer Vergangenheit fragt, sagt sie nicht viel. Von dem wenigen, das sie erzÃ¤hlt, kÃ¶nnt Ihr schlieÃŸen, dass sie eine Waise ist. Sie scheint auch eine ausgeprÃ¤gte Abneigung gegenÃ¼ber SÃ¶ldnern der Flammenden Faust zu hegen, ebenso eine offensichtliche Respektlosigkeit gegenÃ¼ber MÃ¤nnern im allgemeinen. Sie scheint sich etwas beweisen zu mÃ¼ssen und wahrscheinlich hatte sie nicht unbedingt eine Bilderbuch-Kindheit. */
+		SAY INITIAL_MEETING #3608 // @102 /* Ich scheiÃŸ auf Eure MÃ¤nnlichkeit! */
+		SAY HAPPY #3595 // @103 /* Feinde niedermetzeln...bringt Freude ins Leben. */
+		SAY UNHAPPY_ANNOYED #3597 // @104 /* Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann. */
+		SAY LEADER #3583 // @105 /* Ich werde diese Gruppe besser anfÃ¼hren, als es ein Mann jemals kÃ¶nnte. */
+		SAY TIRED #3584 // @106 /* Kleine Pause geht in Ordnung... */
+		SAY BORED #3585 // @107 /* Reine Zeitverschwendung, besser gesagt 'MÃ¤nner' sind reine Zeitverschwendung. */
+		SAY BATTLE_CRY1 #3590 // @108 /* Wenn es blutet kann ich es auch tÃ¶ten. */
+		SAY BATTLE_CRY2 #3611 // @109 /* das Schwein hat es heraufbeschwÃ¶rt. */
+		SAY BATTLE_CRY3 @110 /* Lasst Euch von keinem Mann einschÃ¼chtern. */
+		SAY DAMAGE #5276 // @111 /*  */
+		SAY DYING #5280 // @112 /*  */
+		SAY SELECT_COMMON1 #3577 // @113 /* Vorsicht ist heldenhafter als Mut. */
+		SAY SELECT_COMMON2 #3589 // @114 /* MÃ¤nner sind so armselig. */
+		SAY SELECT_COMMON3 #3591 // @115 /* Hm...ich liebe BlutvergieÃŸen. */
+		SAY SELECT_COMMON4 #3598 // @116 /* MÃ¤nner denken niemals mit ihrem Gehirn. */
+		SAY SELECT_COMMON5 #3607 // @117 /* Nutzloser stinkender mÃ¤nnlicher Dreckhaufen. */
+		SAY SELECT_ACTION1 #3592 // @118 /* Ok. */
+		SAY SELECT_ACTION2 #3593 // @119 /* Wirklich? */
+		SAY SELECT_ACTION3 #3594 // @120 /* Ich tue es. */
+		SAY SELECT_ACTION4 #3596 // @121 /* Manchmal bringt mich schon der Geruch eines Mannes zum WÃ¼rgen. */
+		SAY SELECT_ACTION5 #3595 // @122 /* Feinde niedermetzeln bringt Freude ins Leben. */
+		SAY SELECT_ACTION6 #3597 // @104 /* Das Schwert ist das Einzige, worauf sich eine Frau verlassen kann. */
+		SAY SELECT_ACTION7 #3604 // @123 /* Mit Schmeicheleien kommt Ihr bei mir nicht weiter. */
+WRITE_ASCIIE 0x034 ~%sharS%~ (8)	// Small portrait
+WRITE_ASCIIE 0x03c ~%sharL%~ (8)	// Large portrait
+// WRITE_BYTE 0x270 ~128~ // Allegiance neutral
+WRITE_ASCII SCRIPT_OVERRIDE ~JOsharte~  #8
+WRITE_ASCII DIALOG ~SHARTE~  #8
+WRITE_ASCII DEATHVAR ~sharteel~ (32)
 
-// Gebietscripte ergänzen
-EXTEND_BOTTOM ~AR0602.bcs~ ~Sharteel_BG2/Baf/Arshar.bcs~
-EXTEND_BOTTOM ~AR0406.bcs~ ~Sharteel_BG2/Baf/AR0406.bcs~
+// Gebietscripte ergÃ¤nzen
+EXTEND_BOTTOM ~AR0602.bcs~ ~Sharteel_BG2/Baf/Arshar.baf~
+EXTEND_BOTTOM ~AR0406.bcs~ ~Sharteel_BG2/Baf/AR0406.baf~
 
-// Dialoge kompilieren
-COMPILE ~Sharteel_BG2/Dialogs/charJ.d~ // USING ~~
-COMPILE ~Sharteel_BG2/Dialogs/charP.d~ // USING ~~
+ACTION_IF GAME_IS ~eet~ BEGIN
 
-// Dialoge in 2da's hinzufügen
-APPEND ~pdialog.2da~ ~shartel	charP		charJ		charD~
-	UNLESS ~shartel~
+	OUTER_SPRINT "Spawn_Area" ~AR0602~
+	OUTER_SPRINT "Spawn_Point" ~1434.1524~
+	
+	EXTEND_BOTTOM ~AR0602.bcs~ ~Sharteel_BG2/Baf/Continuous_sharteel.baf~ EVALUATE_BUFFER
+	
+	OUTER_SPRINT "Spawn_Area" ~AR0406~
+	OUTER_SPRINT "Spawn_Point" ~681.1094~
+	
+	EXTEND_BOTTOM ~AR0406.bcs~ ~Sharteel_BG2/Baf/Continuous_sharteel.baf~ EVALUATE_BUFFER
+	
+END
+
+// Dialoge in 2da's hinzufÃ¼gen	//  sharteel ?
+
+APPEND ~pdialog.2da~ ~SHARTEEL     JOcharP     JOcharJ     JOcharD~
+	UNLESS ~SHARTEEL~
 		UNLESS ~25POST~
 
-APPEND ~pdialog.2da~ ~shartel charP charJ charD char25P char25J char25D~
-	UNLESS ~shartel~
+APPEND ~pdialog.2da~ ~SHARTEEL     JOcharP     JOcharJ     JOcharD     JOchar25P     JOchar25J     JOchar25D~
+	UNLESS ~SHARTEEL~
 		IF ~25POST~
+
+COMPILE EVALUATE_BUFFER ~Sharteel_BG2/Dialogs/charJ.d~
+COMPILE EVALUATE_BUFFER ~Sharteel_BG2/Dialogs/charP.d~
+COMPILE EVALUATE_BUFFER ~Sharteel_BG2/Dialogs/JOchar25.d~
+
+	// Variable used by FUNCTION GW_FIND_DLG_RESPONSE_STRING to find after which transition NPC will be recalled by Fate Spirit.
+			OUTER_SET fatesp_string = 83364  // Rasaad = @83364  = ~Amenez-moi Rasaad, le moine de la Conscience Solaire humain.~
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+  INCLUDE ~EET/other/EET_functions.tph~
+  LAF ~EET_NPC_TRANSITION~
+    INT_VAR
+      type = 2
+      default_ToB = 1
+      clean_ToB = 1
+    STR_VAR
+      dv = "sharteel"
+      override_SoA = "JOsharte"
+//      override_ToB = "xxxxx25S"
+      dialog_ToB = "JOchar25"
+      cre_ToB = "JOsharte"
+      traFile = EVAL "weidu_external/Sharteel_BG2/Languages/autotra/%LANGUAGE%/setup.tra"
+      string = "@3"
+      stringPosDV = "Safana"
+      clean_ToB_DV = "sharteel"
+  END
+END ELSE BEGIN
+		INCLUDE ~Sharteel_BG2/lib/gw_dlg_functions.tpa~
+  COMPILE EVALUATE_BUFFER ~Sharteel_BG2/Dialogs/FATESP.d~ USING ~weidu_external/Sharteel_BG2/Languages/autotra/%LANGUAGE%/setup.tra~
+END

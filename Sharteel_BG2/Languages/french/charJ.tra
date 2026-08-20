@@ -1,0 +1,218 @@
+// Start : Gender(Player1,FEMALE) Irenicus donjon
+
+@500  = ~<CHARNAME> ! Tu as réussie à te libérer, ça fait du bien de te voir. Je me suis réveillée depuis peu avec un mal au crâne atroce. J'ai jeter un coup d'œil aux alentours... Tout en te cherchant.~
+
+// PC
+@501  = ~Comment t'es-tu échappée ?~
+@502  = ~As-tu découvert l'identité de notre ravisseur ?~
+@503  = ~Rejoins-moi, ensemble nous traquerons notre geôlier et lui ferons goûter à notre colère.~
+@504  = ~Je dois me hâter de trouver la sortie. Il ne fait pas bon de s'attarder par ici.~
+
+@505  = ~Ce n'était pas très difficile, au cas où tu ne l'avez remarqué notre « geôlier » a eu quelques ennuis. J'ai croisé tout un tas de cadavres encapuchonnés. Probablement des assassins qui, je suppose sont ici pour s'en prendre au propriétaire des lieux. Je n’ai pas encore explorer plus en avant, cet endroit reste dangereux et je suis plutôt contente d’avoir trouvé une armure et des armes. Mon intention était de venir te chercher, toi et les autres, afin que l’on puisse s’échapper tous ensemble. Mais je vois que tu ne m'a pas attendue.~ // 501
+
+// PC
+@506  = ~Maintenant que nous sommes à nouveau réunis. Allons-y... J'ai un mot à dire à notre « geôlier », il vaudrait mieux pour ces assassins qu'ils ne s'interposent pas entre nous.~
+@507  = ~Je n'ai pas l'intention de me frayer un chemin en ta compagnie. Dans cet endroit, on ne peut compter que sur soi-même.~
+
+
+
+
+//
+@508  = ~Non. Je n’ai plus que de vagues souvenirs de ce qui nous a amenés ici. Je me souviens encore très bien de la façon dont nous avons fouillé la ville basse de Baldur’s Gate à la recherche de votre frère Sarevok – et je me souviens aussi très bien de la façon dont vous l’avez finalement terrassé de votre épée. Tout cela me semble ne remonter qu’à quelques jours… Le duc Eltan nous a laissés nous reposer un moment au palais des grands-ducs… et vous avez soudainement été très pressé de partir. Pourquoi donc ?~ // 502
+
+// PC
+@509  = ~Nous n’avons pas le temps pour ça maintenant, nous devrions essayer de nous sortir d’ici. Puis-je compter sur votre aide pour cela ?~
+@510  = ~Tout cela n’a plus d’importance maintenant, Shar-Teel. Je suis libre et je vais quitter ce donjon.~
+@511  = ~Je suis un descendant de Bhaal, le dieu du meurtre. Que pensez-vous que les grands-ducs auraient fait s'ils l'avaient découvert ?~ ~Je suis une descendante de Bhaal, le dieu du meurtre. Que pensez-vous que les grands-ducs auraient fait s'ils l'avaient découvert ?~
+
+@512  = ~Nous avons déjà affronté de nombreux dangers et nous les avons tous surmontés, vaincu chaque ennemi et versé beaucoup de sang. Vous êtes l'incarnation du meurtre, tout comme Sarevok. Mon épée est à votre service, <CHARNAME>. Aussi différentes que fussent mes raisons de me joindre à vous à l'époque, les choses ont changé. Je vous jure fidélité. Allons ensemble vers l'avenir et voyons ce que le destin réserve à vous et à votre lignée.~ // 506 / 509 518
+
+// PC
+@513  = ~Nous allons d'abord rendre visite à notre « hôte » et le remercier pour son aimable invitation.~
+@514  = ~Prenez votre place dans le groupe et restez silencieux.~
+@515  = ~J'ai décidé de ne pas vous emmener finalement.~
+
+@516  = ~<CHARNAME>, je pense avoir prouvé mes capacités plus d’une fois par le passé. Nous pourrions vraiment nous être très utiles l’un à l’autre ici-bas, mais je ne m’imposerai à personne qui ne souhaite pas ma présence.~ // 507 / 510 / 515
+
+// PC
+@517  = ~Votre présence est en effet indésirable, allez vous faire voir.~
+@518  = ~Une épée de plus ne me ferait pas de mal, et je me souviens très bien de vos talents de combattant.~
+@519  = ~Je suis désolé, Shar-Teel, mais je ne peux pas vous accompagner pour l'instant. J'espère que vous trouverez le chemin vers la surface, même sans mon aide.~
+
+@520  = ~Vous avez sans doute raison, <CHARNAME>. Ils vous auraient traqué et tenté de vous tuer. Mais notre présence dans ce donjon ne me semble pas être l'œuvre des grands-ducs. Mais alors, qui en est responsable ?~ // 511
+
+// PC
+@521  = ~C'est une question sur laquelle nous ne pouvons que spéculer pour l'instant. Rejoignez-moi et nous essaierons de le découvrir ensemble.~
+@522  = ~Je ne sais pas, mais j'ai l'intention de le découvrir. Sans vous – désolé.~
+
+@523  = ~C'est bien ainsi que je me souviens de vous, <CHARNAME>. Même lorsque la situation est vraiment désespérée, vous restez calme et serein, et vous trouvez toujours le moyen de plaisanter. Nous devrions d'abord essayer de retrouver notre équipement, car il semble qu'on nous ait tout pris. Que cette bande de minables attende un peu que je mette la main sur eux... malheur à eux s'il manque ne serait-ce qu'un seul objet !~ // 513
+@524  = ~Tu n'as apparemment pas beaucoup changé, <CHARNAME>, tu as toujours été assez fougueux. J'ai autrefois promis de me mettre à ton service si tu me battais au combat. Tu as gagné — et je ne revendique donc rien.~ // 514
+@525  = ~Peut-être nous reverrons-nous un jour, si vous survivez. D'ici là, portez-vous bien.~ // 517 / 519
+
+// Start : Gender(Player1,MALE) Irenicus donjon
+
+@526  = ~<CHARNAME> ! Tu as réussi à te libérer ? Pour un homme, tu n'as pas l'air aussi pitoyable que je le pensais.~
+
+// PC
+@527  = ~Merci pour le « compliment ». Je suis libre et je peux suivre ma propre voie. La question est : qu'est-ce que tu comptes faire ?~
+@528  = ~Tu n'as pas changé d'un iota, Shar-Teel, et pour être honnête, je commence à en avoir marre de tes divagations insultantes.~
+@529  = ~As-tu la moindre idée de qui pourrait être responsable de notre présence ici ?~
+
+@530  = ~Pour l'instant, il ne semble pas que j'aie vraiment le choix. Je n'ai aucune idée de l'étendue de ce réseau de galeries et mon statut de « prisonnière » ne va pas vraiment m'aider en cas d'évasion. Peut-être devrions-nous faire équipe, <CHARNAME>, au moins jusqu'à ce qu'on se soit échappés d'ici. Qu'en dis-tu ?~
+
+// PC
+@531  = ~On dirait que tu n'es pas vraiment favorable à cette idée. Ma compagnie vous pèse-t-elle déjà autant que ça ?~
+@532  = ~Alors rejoignez-moi. Mais nous allons d'abord chercher notre « hôte » pour le remercier de son aimable « invitation ».~
+@533  = ~Allons-y, tout m'est égal tant qu'on part d'ici.~
+
+@534  = ~Vous êtes exactement comme tous les autres hommes ! Je pensais que vous étiez différent, <CHARNAME>, mais votre comportement me prouve que ce n'est pas le cas. Disparaissez de ma vue !~
+@535  = ~Je... n'ai pas dit ça. Je n'aime pas prendre de décisions hâtives. Nous devrions partir maintenant, nous pourrons discuter du reste plus tard.~
+
+// PC
+@536  = ~Très bien, partons.~
+@537  = ~J'ai changé d'avis... je ne vous emmènerai pas.~
+
+@538  = ~Je n'y vois aucun inconvénient, <CHARNAME>. Tout comme vous, j'ai envie de me venger de la douleur que j'ai eu le « plaisir » d'endurer. Allons-y.~
+@539  = ~Partons donc, nous pourrons toujours discuter du reste plus tard.~
+@540  = ~Libérez-moi de cette cellule et laissez-moi vous accompagner, <CHARNAME> ! Je pense avoir prouvé mes capacités plus d’une fois par le passé. Non, je vois bien. Je le vois dans vos yeux. Votre regard est froid... tout comme votre cœur. Vous me laissez ici pour que je... pourrisse ? Je ne mérite pas une telle fin, <CHARNAME> !~
+
+// PC
+@541  = ~Vous avez un bon sens de l'observation, c'est une qualité que j'appréciais autrefois chez vous. Adieu, nous ne nous reverrons plus...~
+@542  = ~Au contraire, je veux que vous vous joigniez à moi.~
+
+@543  = ~Ce n'était pas très difficile. Je ne sais pas si vous l'avez remarqué, mais notre « geôlier » a eu quelques ennuis ici-bas. En venant par ici, je suis tombé sur toute une série de cadavres encapuchonnés. Ils m'ont semblé être des assassins, je suppose qu'ils sont ici pour tuer le propriétaire de cet établissement. Je n’ai pas encore pu explorer les lieux en détail, cet endroit reste dangereux et je suis content d’avoir trouvé une armure et des armes ici. On m’a sans doute dérobé ma propre armure alors que j’étais inconscient. À ce que je vois, je n’ai pas d’avance sur vous, vous êtes aussi libres que moi et, en plus, vous êtes encore en vie.~
+
+@544  = ~On dirait bien qu’on a réussi, <CHARNAME>. Le mage nous a filé entre les doigts, mais je parie que là où il se trouve maintenant, il ne se porte pas beaucoup mieux que nous sous sa garde. Alors, qu’avez-vous l’intention de faire ? Allez-vous laisser tomber l’affaire ?~
+
+// PC
+@545  = ~Laisser tomber ? Ces maudits mages ont enlevé Imoen !~
+@546  = ~Je ne sais pas, c'est peut-être mieux ainsi.~
+@547  = ~Non. Je n'aurai de repos tant que je n'aurai pas la tête du mage entre les mains et ses entrailles répandues sur le sol !~
+
+@548  = ~Cette fille compte beaucoup pour vous ?~
+
+// PC
+@549  = ~Elle est comme une sœur pour moi, je ne peux pas simplement l'abandonner. Elle ferait la même chose pour moi.~
+@550  = ~Plus que votre vie, Shar-Teel, et c'est tout ce que vous avez besoin de savoir.~
+@551  = ~C'est simplement une question de principe. Elle faisait partie de mon groupe et est donc sous ma protection personnelle. Quiconque s'en prend à l'un de mes compagnons s'en prend aussi à moi.~
+
+@552  = ~Nous devrions peut-être aborder un autre sujet. Vous savez que je me suis engagé envers vous lorsque nous nous sommes rencontrés près de Beregost. Je pense que ma dette devrait être acquittée à présent...~
+
+// PC
+@553  = ~Vous voulez donc quitter le groupe ?~
+@554  = ~Où voulez-vous en venir ?~
+
+@555  = ~Oui ! Retrouvez cet homme et jugez-le selon vos propres critères ! Je ne voudrais pour rien au monde manquer la chasse au mage. Mais...~
+@556  = ~Je comprends. Dans ma vie, il n'y a personne qui ferait une chose pareille pour moi...~
+@557  = ~Je tiens tout d'abord à préciser que tout ce que je ferai à partir de maintenant n'a rien à voir avec ma promesse de me battre pour votre cause.~
+
+// PC
+@558  = ~Très bien, considérons que l'affaire est réglée. Que comptez-vous faire maintenant de votre « liberté » nouvellement acquise ?~
+@559  = ~Je ne vois pas les choses ainsi. Vous resterez à mon service jusqu'à ce que je vous autorise à partir, compris ?~
+
+@560  = ~Je n'ai pas l'intention de quitter le groupe, si c'est ce qui vous préoccupe. Bien que vous soyez un homme, je sens que votre destin sera d'une grande importance. Vous êtes un descendant de Bhaal et vous n'avez pas été le seul à étudier les prophéties d'Alaundo à Kerzenburg, lorsque nous recherchions les chefs du Trône de fer. Une guerre sanglante éclatera sur la Côte des Épées, et l'un des descendants de Bhaal est destiné à façonner le destin de toute la Côte des Épées pendant des siècles. Je suis impatient de voir comment les choses vont évoluer, <CHARNAME>.~ ~Je n'ai pas l'intention de quitter le groupe, si c'est ce qui vous préoccupe. C'est précisément parce que vous êtes une femme que je sens que votre destin sera d'une grande importance. Vous êtes une descendante de Bhaal et vous n'étiez pas la seule à étudier les prophéties d'Alaundo à Kerzenburg, alors que nous recherchions les dirigeants du Trône de fer. Une guerre sanglante éclatera sur la Côte des Épées, et l'un des descendants de Bhaal est destiné à sceller le sort de toute la Côte des Épées pour des siècles. Je suis impatient de voir comment les choses vont évoluer, <CHARNAME>.~
+
+// PC
+@561  = ~Je ne suis pas sûr d'apprécier votre intérêt, mais qu'importe.~
+@562  = ~Personne ne peut me contester mon droit d'aînesse, je suis le plus puissant de tous les enfants de Bhaal !~
+
+@563  = ~Qu'il en soit ainsi ! Venez, il est temps de nous atteler à la tâche qui nous attend, <CHARNAME>.~
+
+// Start : AreaCheck("AR0406") Copper Coronet
+
+@564  = ~Vous n'êtes pas mort ? Je n'aurais pas cru qu'un homme comme vous réussirait à ne pas se faire tuer pendant aussi longtemps.~ ~...<CHARNAME> ? Que faites-vous ici ? Je n'aurais jamais pensé que nous nous reverrions...~
+
+// PC
+@565  = ~Mais qui êtes-vous au juste ? Devrais-je vous connaître ?~
+@566  = ~Je suis content que tu ailles bien, Shar-Teel ! Je craignais que ce maudit mage ne t'ait fait du mal.~
+@567  = ~C'est une longue histoire... qu'est-ce qui t'amène ici ?~
+
+@568  = ~Tu ne t'en souviens peut-être plus, mais nous nous sommes rencontrés près de Beregost. Si ma mémoire est bonne, j'avais été vaincu au combat et j'avais donc accepté de me battre pour ta cause. Nous avons élucidé la crise du fer sur la Côte-Lourde et démasqué les véritables instigateurs de tout cela.~
+@569  = ~Tu devrais t'en souvenir, <CHARNAME>. Nous avons été attaqués pendant la nuit il y a quelques jours à peine et nous avons été faits prisonniers.~
+
+// PC
+@570  = ~Et tu as réussi à t'échapper, tout comme moi.~
+@571  = ~Je m'en souviens, mais je ne vous ai pas vu dans le donjon. Qu'est-ce qui vous amène à Amn ?~
+
+@572  = ~Il a essayé, mais je lui ai échappé. Il y avait beaucoup d'agitation dans ce complexe souterrain lorsqu'un groupe non négligeable d'assassins masqués a fait irruption par les égouts. Il y a eu de nombreux combats et beaucoup de confusion. J’ai pu profiter de cette situation pour m’échapper. Je me suis enfui par les égouts et je suis ressorti près d’un palais. J’avais certes l’intention de voyager vers le sud un jour, mais pas à ce moment-là et certainement pas dans ces circonstances… Que comptez-vous faire maintenant, <CHARNAME>, maintenant que vous êtes libre ?~
+
+// PC
+@573  = ~Je vais m'occuper d'Irenicus et mettre un terme à ses agissements insondables.~
+@574  = ~Les Mages voilés ont enlevé Imoen. Je suis déjà à sa recherche, mais je dois d'abord m'habituer à ce nouvel environnement qui m'est inconnu.~
+@575  = ~Je n'ai pas encore pris de décision définitive, mais je ne vais certainement pas laisser cette affaire en suspens.~
+
+@576  = ~Maintenant que la pénurie de fer de la Côte des Épées a été élucidée, une guerre me semble peu probable malgré les tensions entre la Porte de Baldur et l'Amn. Cette crise a laissé des traces, mais personne ne semble disposé à saisir l'occasion pour provoquer un bain de sang qui bouleverserait le destin de la Côte des Épées !~
+@577  = ~Il ne me restait plus guère de raisons de rester dans le Nord, mais je ne peux pas non plus dire que j’avais prévu de venir ici.~
+@578  = ~Il est temps de se réorienter et de traquer les ennemis qui nous ont causé tant de tort...~
+//
+
+
+
+// PC
+@579  = ~Ton attitude est méprisable, Shar-Teel ! La guerre n’a jamais rien apporté de bon !~
+@580  = ~Une combattante habile supplémentaire me serait bien utile. Qu’en dis-tu ?~
+@581  = ~Les choses se sont passées comme elles se sont passées, c’est sans doute mieux ainsi.~
+
+
+
+
+//
+@582  = ~Irenicus ? C'est donc le nom de celui qui nous a capturés, très bien ! J'ai moi-même un compte à régler avec lui. Puisque nous poursuivons de toute façon le même objectif, nous devrions profiter de cette rencontre pour conclure une alliance.~ ~Irenicus ? C'est donc le nom de celui qui nous a capturés ? Très bien. J'ai moi-même un compte à régler avec lui. Puisque nous poursuivons de toute façon le même objectif, nous devrions profiter de cette rencontre pour conclure une alliance, ma sœur.~
+//
+
+
+
+
+
+// PC
+@583  = ~Très bien ! J'ai besoin d'une combattante dotée de vos compétences. Il ne sera toutefois pas facile d'atteindre le mage, il a été « enlevé » avec Imoen par les mages voilés.~
+@584  = ~Nous avons peut-être le même objectif, mais nos chemins sont différents.~
+@585  = ~Pour l'instant, il n'y a malheureusement pas de place dans le groupe, mais je pourrai peut-être revenir sur ta proposition plus tard ?~
+
+
+
+//
+@586  = ~Je ne peux que trop bien comprendre, moi aussi c'est la première fois que je viens à Atkatla. Peut-être pourrions-nous nous repérer ensemble – et je t'aiderai à trouver suffisamment de raisons pour traquer ce mage.~ ~Je ne peux que trop bien comprendre, moi aussi c'est la première fois que je viens à Atkatla. Peut-être pourrions-nous nous repérer ensemble, et je vous aiderai à trouver suffisamment de raisons pour traquer ce mage. Qu'en dites-vous, ma sœur ?~
+@587  = ~Eh bien, si vous avez du mal à vous décider, je devrais peut-être vous aider un peu. Cherchez… trouvez… et tuez l’homme qui vous a infligé toute cette souffrance et cette humiliation ! Suivez cet objectif et vous aurez une lame fiable à vos côtés. Je vous offre mon épée pour que vous puissiez vous venger. J'ai moi-même un compte à régler avec ce mage, car après tout, il m'a enfermée tout comme vous.~ ~Je vous comprends, ma sœur. Vous avez été capturée et enfermée comme une bête. Ce mage vous a dépouillée de votre dignité et de tout votre honneur. Au fond de vous, vous devez avoir envie de lui arracher l’âme du corps ! Je partage votre haine, car moi aussi j’ai souffert à cause de lui. Les hommes sont tous pareils ! Allons-y ensemble, arrachons la crâne stupide du mage de ses épaules et délectons-nous de son sang, qu’en dites-vous ?~
+//
+
+
+
+@588  = ~Je n'aime guère me soumettre à un homme... mais pour toi, je ferai une exception. Tu ne m'entendras pas me plaindre, tant que nos lames sont trempées de sang...~ ~Avec plaisir, ma sœur. La mort te suis comme une ombre et je serai là pour prendre ma part.~ // 583
+@589  = ~Qu'est-ce que c'est ? Aurais-je affaire à un idéaliste ? C'est touchant, vraiment ! Aller, dégage de ma vue, je ne supporte pas les gens comme toi !~ ~Qu'est-ce que c'est ? Aurais-je affaire à une idéaliste ? C'est touchant, vraiment ! Aller, dégage de ma vue, je ne supporte pas les gens comme toi !~ // 579
+
+// PC
+@590  = ~Non ma chère, je crois que tu as besoin d'une bonne leçon.~
+@591  = ~J'espère pour toi que nous ne nous reverrons plus, car la prochaine fois, je ne serai pas aussi indulgent face à tes insultes !~ ~J'espère pour toi que nous ne nous reverrons plus, car la prochaine fois, je ne serai pas aussi indulgente face à tes insultes !~
+
+@592  = ~C'est ta décision, pas la mienne. Je compte rester un moment ici, à la Couronne de Cuivre, si tu changes d'avis.~
+@593  = ~Alors viens apprendre la tienne... N'attends aucune pitié de ma part, idiot !~ ~Alors viens apprendre la tienne... N'attends aucune pitié de ma part, idiote !~
+@594  = ~J'en tremble de peur, minable ! Tu peux bien aller te faire voir...~
+
+@595  = ~Tu as réfléchi, <CHARNAME> ? Veux-tu faire appel à mes services ?~
+
+// Salvanas Copper Coronet
+@596  = ~Éloignes-toi de la portée de ma lame, si tu tiens à rester en vie ! Misérable mâle !~
+@597  = ~Ça suffit, elfe répugnant ! Tu me dégoûtes ! Trouves-toi donc une traînée assez naïve pour apprécier tes petits jeux !~
+
+// Frennedan Irenicus donjon
+@598  = ~<CHARNAME>, quelque chose qui cloche ! Tu ne vas tout de même pas laisser cette...  Cette chose en liberté, n'est-ce pas ?~
+// Frennedan
+@599  = ~« Cette chose » ? Je... Je ne suis pas une « chose » ! Oh, aidez-moi, s'il vous plaît...~
+
+// Illyich Irenicus donjon
+@600  = ~On dirait que ces nains veulent nous causer des ennuis. Écoute-moi bien petit mâle : si tu ne te bats pas en retraite immédiatement, je t'enverrai là où ton maître se retrouvera bientôt... En enfer !~
+// Illyich
+@601  = ~Des nains ? Vous ne quitterez jamais cet endroit !~
+
+// Yoshimo Irenicus donjon
+@602  = ~Ce type n'a vraiment pas l'air d'être digne de confiance. Fais attention à ce que tu lui dis, <CHARNAME>. Mieux vaut éviter les décisions hâtives.~
+@603  = ~Tu tiens vraiment à l'emmener avec nous ? Ne viens pas dire que tu n'étais pas prévenu...~ ~Tu tiens vraiment à l'emmener avec nous ? Ne viens pas dire que tu n'étais pas prévenue...~
+
+// Assassin Irenicus donjon
+@604  = ~Ça doit être l'un des assassins dont nous avons parlé. Peut-être pourrions-nous discuter de toute cette affaire ; après tout, ils ne semblent pas plus être du côté de notre geôlier que nous-mêmes.~
+
+// Salvanas Copper Coronet
+@605  = ~Quelle charmante créature, quel doux visage ! Je suis ébloui par votre beauté, mon amour.~
+@606  = ~Mais je ne vis que pour vous, ma douce rose printanière ! Une simple épée ne saurait causer autant douleur que ce regard si intense. Je me consume d’amour pour vous, ma bien-aimée !~
+@607  = ~Mon cœur éconduit se brise... Cela me peine tant... Mais je dois vous laisser partir.~

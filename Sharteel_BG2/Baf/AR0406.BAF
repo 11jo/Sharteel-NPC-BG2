@@ -1,0 +1,16 @@
+IF
+	Global("shartFirstTalk","GLOBAL",0)
+	Global("sharteelExists2","MYAREA",0)
+//	!Exists("sharteel")
+	!BeenInParty("sharteel")
+	!Dead("sharteel")
+	!InMyArea("sharteel")
+THEN
+	RESPONSE #100
+		SetGlobal("sharteelExists2","MYAREA",1)
+		MoveGlobal("AR0406","sharteel",[681.1094])
+//		CreateCreature("JOsharte",[681.1094],0)
+//		ActionOverride("sharteel",MakeGlobal())
+		Continue()
+END
+
