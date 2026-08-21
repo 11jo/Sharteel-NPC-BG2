@@ -28,6 +28,16 @@ THEN
 //		ActionOverride("sharteel",ChangeAIScript("",DEFAULT))
 		ActionOverride("sharteel",SetDialog("JOchar"))
 //		ActionOverride("sharteel",DestroyAllEquipment())
+		ActionOverride("Jailkeep Table",TakeCreatureItems("sharteel",ALL))
+		GiveItemCreate("HELM01","sharteel",0,0,0)
+		GiveItemCreate("LEAT04","sharteel",0,0,0)
+		GiveItemCreate("SW1H04","sharteel",0,0,0)
+		GiveItemCreate("POTN52","sharteel",4,0,0)
+		%XEquipItem_armor%
+		%XEquipItem_sword%
+		%XEquipItem_helm%
+		GiveItemCreate("SW1H04","sharteel",0,0,0)
+		%XEquipItem_sword2%
 		SetInterrupt(TRUE)
 		Continue()
 END

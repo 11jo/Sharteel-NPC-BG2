@@ -66,12 +66,24 @@ WRITE_ASCIIE 0x034 ~%sharS%~ (8)	// Small portrait
 WRITE_ASCIIE 0x03c ~%sharL%~ (8)	// Large portrait
 // WRITE_BYTE 0x270 ~128~ // Allegiance neutral
 WRITE_ASCII SCRIPT_OVERRIDE ~JOsharte~  #8
-WRITE_ASCII DIALOG ~SHARTE~  #8
+WRITE_ASCII DIALOG ~JOchar~  #8
 WRITE_ASCII DEATHVAR ~sharteel~ (32)
 
 // Gebietscripte ergänzen
 EXTEND_BOTTOM ~AR0602.bcs~ ~Sharteel_BG2/Baf/Arshar.baf~
 EXTEND_BOTTOM ~AR0406.bcs~ ~Sharteel_BG2/Baf/AR0406.baf~
+
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+	OUTER_SPRINT "XEquipItem_sword2" ~XEquipItem("SW1H04","sharteel",SLOT_SHIELD,EQUIP)~
+	OUTER_SPRINT "XEquipItem_sword" ~XEquipItem("SW1H04","sharteel",SLOT_WEAPON1,EQUIP)~
+	OUTER_SPRINT "XEquipItem_armor" ~XEquipItem("LEAT04","sharteel",SLOT_ARMOR,EQUIP)~
+	OUTER_SPRINT "XEquipItem_helm" ~XEquipItem("HELM01","sharteel",SLOT_HELM,EQUIP)~
+END ELSE BEGIN
+	OUTER_SPRINT "XEquipItem_helm" ~ActionOverride("HELM01",EquipItem("LEAT04"))~
+	OUTER_SPRINT "XEquipItem_armor" ~ActionOverride("sharteel",EquipItem("LEAT04"))~
+	OUTER_SPRINT "XEquipItem_sword" ~ActionOverride("sharteel",EquipItem("SW1H04"))~
+	OUTER_SPRINT "XEquipItem_sword2" ~~
+END
 
 ACTION_IF GAME_IS ~eet~ BEGIN
 

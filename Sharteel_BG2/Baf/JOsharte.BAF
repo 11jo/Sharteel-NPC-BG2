@@ -1,4 +1,13 @@
 
+// Tweaks Anthology comp 4170 workaround
+IF
+	InParty(Myself)
+	HasItem("monhp1",Myself)
+THEN
+	RESPONSE #100
+		DestroyItem("monhp1")
+END
+// Tweaks Anthology comp 4170 workaround
 
 IF
 	Global("sharteelStartDialog","LOCALS",0)
