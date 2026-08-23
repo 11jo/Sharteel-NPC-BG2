@@ -6,13 +6,15 @@ IF
 		BeenInParty("sharteel")
 		Exists("sharteel")
 	!Dead("sharteel")
-	!InPartyAllowDead("sharteel")
-	!InParty("sharteel")
-	!InMyArea("sharteel")
+//	!InPartyAllowDead("sharteel")
+//	!InParty("sharteel")
+//	!InMyArea("sharteel")
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
+		ActionOverride("sharteel",ChangeAIScript("JOsharte",OVERRIDE))
 		SetGlobal("Continuous_BG2_Sharteel","MYAREA",1)
+		ActionOverride("sharteel",SetGlobal("Continuous_BG2_Sharteel","LOCALS",1))
 		MoveGlobal("%Spawn_Area%","sharteel",[%Spawn_Point%])
 		ApplySpellRES("bdresurr","sharteel")
 		SmallWait(1)
@@ -21,7 +23,6 @@ THEN
 		ChangeSpecifics("sharteel",ALLIES)
 		ActionOverride("sharteel",SetNumTimesTalkedTo(0))
 //		ActionOverride("sharteel",SetGlobal("bd_joined","locals",0)) // SoD
-		ActionOverride("sharteel",ChangeAIScript("JOsharte",OVERRIDE))
 //		ActionOverride("sharteel",ChangeAIScript("",CLASS))
 //		ActionOverride("sharteel",ChangeAIScript("",RACE))
 //		ActionOverride("sharteel",ChangeAIScript("",GENERAL))
@@ -33,10 +34,15 @@ THEN
 		GiveItemCreate("LEAT04","sharteel",0,0,0)
 		GiveItemCreate("SW1H04","sharteel",0,0,0)
 		GiveItemCreate("POTN52","sharteel",4,0,0)
+		ActionOverride("sharteel",SetItemFlags("HELM01",IDENTIFIED,TRUE))
+		ActionOverride("sharteel",SetItemFlags("LEAT04",IDENTIFIED,TRUE))
+		ActionOverride("sharteel",SetItemFlags("SW1H04",IDENTIFIED,TRUE))
+		ActionOverride("sharteel",SetItemFlags("POTN52",IDENTIFIED,TRUE))
 		%XEquipItem_armor%
 		%XEquipItem_sword%
 		%XEquipItem_helm%
 		GiveItemCreate("SW1H04","sharteel",0,0,0)
+		ActionOverride("sharteel",SetItemFlags("SW1H04",IDENTIFIED,TRUE))
 		%XEquipItem_sword2%
 		SetInterrupt(TRUE)
 		Continue()

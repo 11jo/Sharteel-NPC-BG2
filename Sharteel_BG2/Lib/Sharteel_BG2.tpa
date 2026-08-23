@@ -79,7 +79,7 @@ ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 	OUTER_SPRINT "XEquipItem_armor" ~XEquipItem("LEAT04","sharteel",SLOT_ARMOR,EQUIP)~
 	OUTER_SPRINT "XEquipItem_helm" ~XEquipItem("HELM01","sharteel",SLOT_HELM,EQUIP)~
 END ELSE BEGIN
-	OUTER_SPRINT "XEquipItem_helm" ~ActionOverride("HELM01",EquipItem("LEAT04"))~
+	OUTER_SPRINT "XEquipItem_helm" ~ActionOverride("sharteel",EquipItem("HELM01"))~
 	OUTER_SPRINT "XEquipItem_armor" ~ActionOverride("sharteel",EquipItem("LEAT04"))~
 	OUTER_SPRINT "XEquipItem_sword" ~ActionOverride("sharteel",EquipItem("SW1H04"))~
 	OUTER_SPRINT "XEquipItem_sword2" ~~

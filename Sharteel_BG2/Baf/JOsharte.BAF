@@ -10,6 +10,30 @@ END
 // Tweaks Anthology comp 4170 workaround
 
 IF
+	GlobalGT("Continuous_BG2_Sharteel","LOCALS",0)
+	Global("Continuous_Sharteel_BG2_XP","LOCALS",0)
+    XPLT(Myself,89000)
+	InParty(Myself)
+THEN
+    RESPONSE #100
+		SetGlobal("Continuous_Sharteel_BG2_XP","LOCALS",1)
+		AddXPObject(Myself,89000)
+		Continue()
+END
+
+IF
+	GlobalGT("SharteelSummoned","GLOBAL",0)
+	Global("Continuous_SharteelSummoned_XP","LOCALS",0)
+    XPLT(Myself,2500000)
+	InParty(Myself)
+THEN
+    RESPONSE #100
+		SetGlobal("Continuous_SharteelSummoned_XP","LOCALS",1)
+		AddXPObject(Myself,2500000)
+		Continue()
+END
+
+IF
 	Global("sharteelStartDialog","LOCALS",0)
 	LOS(Player1,10)
 	!StateCheck(Player1,CD_STATE_NOTVALID)
