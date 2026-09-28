@@ -3,6 +3,8 @@ AUTHOR ~Nicolas Peters - darthsabe@web.de~
 
 README ~Sharteel_BG2\Readme\Liesmich.txt~
 
+VERSION ~2.00~
+
 ALWAYS
 
 	DEFINE_ACTION_FUNCTION autotra_workaround BEGIN

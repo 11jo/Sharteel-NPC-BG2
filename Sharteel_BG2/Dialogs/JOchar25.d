@@ -18,7 +18,7 @@ Face(9)~ EXIT
 END
 
 IF ~Global("SharteelSummoned","GLOBAL",1) Gender(Player1,MALE)~ THEN BEGIN 0m
-  SAY ~<CHARNAME> ? Qu'est ce que... Dans quel guêpier as-tu encore mis les pieds ?~
+  SAY @710 /* ~<CHARNAME> ? Qu'est ce que... Dans quel guêpier as-tu encore mis les pieds ?~ */
   IF ~~ THEN REPLY @701 /* C'est une longue histoire... Rejoins-moi et nous le découvrirons.~ DO ~SetGlobal("SharteelSummoned","GLOBAL",2) */ GOTO 1m
   IF ~~ THEN REPLY @702 /* C'est une longue histoire... Nous le découvrirons bien assez tôt.~ DO ~SetGlobal("SharteelSummoned","GLOBAL",2) */ GOTO 2m
 END

@@ -182,7 +182,7 @@ IF ~~ THEN BEGIN Flucht7
 END
 
 IF ~NumTimesTalkedTo(0) Global("shartFirstTalk","GLOBAL",0) AreaCheck("AR0406")~ THEN BEGIN Fraub0
-	SAY @564 /* Ihr seid nicht tot? Ich hätte nicht gedacht, dass ein Mann wie Ihr es schafft, über einen solch langen Zeitraum hinweg nicht getötet zu werden. */
+	SAY @564 /* ~Ihr seid nicht tot? Ich hätte nicht gedacht, dass ein Mann wie Ihr es schafft, über einen solch langen Zeitraum hinweg nicht getötet zu werden.~ ~...<CHARNAME>? Was macht Ihr denn hier? Ich hätte nicht gedacht, dass wir uns je wiedersehen würden...~ */
 	IF ~~ THEN REPLY @565 /* Wer seid Ihr überhaupt? Müsste ich Euch kennen? */ DO ~SetGlobal("shartFluchtGelungen","LOCALS",2)~ GOTO fraub1
 	IF ~~ THEN REPLY @566 /* Ich bin froh, dass es Euch gut geht, Shar-Teel! Ich dachte schon, dieser verfluchte Magier hätte Euch etwas angetan. */ DO ~SetGlobal("shartFluchtGelungen","LOCALS",2)~ GOTO fraub2
 	IF ~~ THEN REPLY @567 /* Das ist eine lange Geschichte...was treibt Euch her? */ DO ~SetGlobal("shartFluchtGelungen","LOCALS",2)~ GOTO fraub3
@@ -236,7 +236,7 @@ END
 
 
 IF ~~ THEN BEGIN fraub7
-	SAY @588 /* Ich ordne mich nur ungern einem Mann unter...aber bei Euch werde ich eine Ausnahme machen. Ich will mich nicht beschweren, solange wir unsere Klingen mit Blut benetzen... */
+	SAY @588 /* ~Ich ordne mich nur ungern einem Mann unter...aber bei Euch werde ich eine Ausnahme machen. Ich will mich nicht beschweren, solange wir unsere Klingen mit Blut benetzen...~ ~Ja, meine Schwester. Der Tod folgt Euch wie ein Schatten und ich werde dabei sein, um meinen Anteil daran zu finden.~ */
 	IF ~~ THEN DO ~SetGlobal("sharteelJoinedParty","LOCALS",1) JoinParty()~ EXIT
 END
 
